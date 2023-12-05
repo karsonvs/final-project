@@ -21,6 +21,21 @@ a:hover, a:focus {
     color:red !important;
 }
 
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    background-color:#13294b;
+}
+
+.galleryimg {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.galleryimgbottom {
+    margin-top:10px;
+}
+
 h3 {
     color:#4b9cd3 !important;
 }
@@ -82,6 +97,9 @@ h1{
 .card-image-top {
     border-radius:0px !important;
 }
+
+
+
 
 
 
