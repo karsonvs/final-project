@@ -44,6 +44,10 @@ h3 {
     color:#7bafd4 !important;
 }
 
+.ph {
+    color: #13294b !important;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 body {
     font-family: 'Rubik', sans-serif;
@@ -124,4 +128,55 @@ h1{
 
 .title {
     font-weight: bold;
+}
+
+form {
+    grid-row: 4 / 7;
+    background-color: #7bafd4;
+    border: 2px solid;
+    border-color: #13294b;
+    padding: 2%;
+    margin: 5%;
+    margin-top: 8%;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    background-color: white;
+    border: 2px solid;
+    height: auto;
+    width: 93%;
+    margin: 0;
+    max-height: 800px;
+    margin-bottom: 2%;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    color:white;
+    margin-bottom: 5%;
+}
+
+button {
+    background-color:#13294b;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+label{
+    color: white;
+    font-weight: bold;
+}
+
+input:focus{
+    outline: 3px solid #13294b;
+}
+
+button:hover, button:focus{
+    background: white;
 }

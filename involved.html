@@ -10,16 +10,20 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-4" id="about">
-      <div class="container-fluid  ">
+      <div class="container-fluid">
+          <div class="col-1">
           <a class="navbar-brand" href="#" id="nav">
               <img src="img/unchhp.png" width="50" height="50" class="d-inline-block align-center mx-6" alt="HHP Logo">
-              The Helping Hand Project UNC
-            </a>
+          </a>
+          </div>
+          <div class="col-4">
+          <h2 id="nav">The Helping Hand <br> Project UNC</h2>
+          </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
-          <div class="navbar-nav col-6 offset-lg-6">
+          <div class="navbar-nav offset-md-4 offset-lg-6 col-6">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="about.html">About Us</a>
             <a class="nav-link" href="gallery.html">Gallery</a>
@@ -58,10 +62,29 @@
                team plays a crucial role in maintaining effective communication channels. Beyond their communication 
                responsibilities, the Support Team is also entrusted with coordinating social events, fostering a 
                sense of community and support. Tailored for students with a less technical background, this team 
-               accommodates individuals with a keen interest in the interpersonal aspects of aid provision. Their 
+               accommodates individuals with an interest in the interpersonal aspects of aid provision. Their 
                contributions emphasize the importance of fostering relationships and ensuring seamless communication
                 in the collaborative efforts of the Helping Hand Project.
             </p>
+          </div>
+          <div class=" offset-md-2 col-md-8">
+            <form action="/" method="post" class="form">
+              <div class="col"></div>
+              <fieldset>
+                <div class="col"><legend>Interest Form</legend></div>
+            
+                <div class="col"><label for="name">Name</label></div>
+            
+                <div class="col"><input type="text" id="name" name="user_name" value="" required></div>
+            
+                <div class="col"><label for="email">Email</label></div>
+            
+                <div class="col"><input type="text" id="email" name="email" value="" required></div>
+                
+                <div class="col offset-5 my-3"><button type="submit" id="nav">SUBMIT</button></div>
+              </fieldset>
+              </div>
+            </form>
           </div>
         </row>
       </container>
