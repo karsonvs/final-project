@@ -1,35 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
 
-  <body class="wrapper">
-    <header class="header"> 
-        <img width="100" height="100" src="https://img.icons8.com/ios/50/dog--v2.png" alt="dog--v2"/>
-        <h1>UNC Helping Hand</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="involved.html">Get Involved</a>
+  <body>
+    <div class="mobilepage">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-4" id="about">
+        <div class="container-fluid  ">
+            <a class="navbar-brand" href="#">
+                <img src="img/unchhp.png" width="50" height="50" class="d-inline-block align-center mx-6" alt="HHP Logo">
+                The Helping Hand Project UNC
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+            <div class="navbar-nav col-6 offset-lg-6">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
+              <a class="nav-link" href="involved.html">Get Involved</a>
+            </div>
+          </div>
         </div>
-        
-        <div class="top-img">
-            <img src="img/hand-table-4.jpg">
+      </nav>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <h1>Design</h1>
+          <div class="col-md-6">
+            <div class="card" id="bio">
+              <img src="img/abel.JPEG" class="card-img-top" alt="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Abel Abraham is our talented President. He is a senior double majoring in Biomedical Engineering (regenerative medicine specialization) and Mathematics (Applied Track). 💊 🧮
+
+                  Abel is from Corbin, KY, which is the birthplace of KFC and he even went to the same school as the Colonel's daughters! 🍗📚</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card" id="bio">
+              <img src="img/jake.JPEG" class="card-img-top" alt="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Jake Rose is our skilled design chair. He is a sophomore majoring in Biomedical Engineering 📚🛠
+
+                  Jake is from Wilmington, NC and loves the outdoors. He has done 1-3 week backpacking trips in New Mexico, Colorado, and Tennessee! 🎒⛰</p>
+              </div>
+            </div>
+          </div>
+
+        <h1>Support</h1>
+          <div class="col-md-6 col-lg-4">
+            <div class="card" id="bio">
+              <img src="img/bailey.JPEG" class="card-img-top" alt="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Bailey Watson is our brilliant Vice President. She is a sophomore double majoring in Biology and Global Studies with a Chem minor. She is pre-med and has a concentration in global health on Africa! 🌍🩺
+
+                  Bailey is from Apex, NC and went to a medical bridgade to Guatemala over the summer and will be leading one to Honduras this summer! ⚕️🇭🇳</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card" id="bio">
+              <img src="img/mackenzie.JPEG" class="card-img-top" alt="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Mackenzie Cole is our awesome Co-Support Chair and Treasurer. She is a junior majoring in Biomedical Engineering with specializations in signals & imaging and microdevices 🎛🩻
+
+                  Mackenzie is from Wake Forest, NC and played soccer for 14 years! ⚽️🏃‍♀️</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card" id="bio">
+              <img src="img/rachael.JPEG" class="card-img-top" alt="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Rachael Manley is our amazing Co-Support Chair. She is a junior majoring in Biology with a Chem minor and worked in a lab last semester that did research on prenatal alcohol exposure 🧪👩‍🔬
+
+                  Rachael is from Wake Forest, NC and also lived in Switzerland for a few years!</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </main>
 
+    <div class="container-fluidfooter pb-0 mb-0 justify-content-center text-light ">
+      <footer>
+          <div class="row my-5 justify-content-center py-1">
+              <div class="col-11">
+                  <div class="row ">
+                      <div class="col-xl-8 col-md-4 col-sm-4 col-12   my-auto mx-auto a"><h3 class=" mb-md-0 mb-5">Helping Hand UNC</h3></div>
+                      <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text "><b>Follow Us</b></h6><ul class="list-unstyled"><li><a href=https://heellife.unc.edu/organization/helpinghandproject>Heel Life</a></li><li><a href=https://www.instagram.com/hhp_unc>Instagram</a></li><li><a href=https://www.facebook.com/hhp.unc.1>Facebook</a></li><li><a href=https://twitter.com/hand_unc>Twitter/X</a></li></ul></div>
+                      <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>Meetings</b></h6><p class="mb-1">Phillips Hall 19C</p><p>7-8 PM Every Wednesday</p> </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    </div>
 
-    <footer class="footer">
-        <h2>footer text</h2>
-    </footer>
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- /* Custom Stylesheet needs to come after bootstrap script */ -->
+    <link href="css/styles.css" rel="stylesheet">
   </body>
+</html>

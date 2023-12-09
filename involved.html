@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body class="wrapper">
-    <header class="header"> 
-        <img width="100" height="100" src="https://img.icons8.com/ios/50/dog--v2.png" alt="dog--v2"/>
-        <h1>UNC Helping Hand</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="info.html">About Us</a>
-            <a href="more.html">Gallery</a>
-            <a href="info.html">Get Involved</a>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+      <div class="container-fluid  ">
+          <a class="navbar-brand" href="#">
+              <img src="img/unchhp.png" width="50" height="50" class="d-inline-block align-center mx-6" alt="HHP Logo">
+              The Helping Hand Project UNC
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+          <div class="navbar-nav col-6 offset-lg-6">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link active" aria-current="page" href="involved.html">Get Involved</a>
+          </div>
         </div>
-
-    </header>
-
-
-    <footer class="footer">
-        <h2>footer text</h2>
-    </footer>
+      </div>
+    </nav>
 
 
+    <div class="container-fluidfooter pb-0 mb-0 justify-content-center text-light ">
+      <footer>
+          <div class="row my-5 justify-content-center py-1">
+              <div class="col-11">
+                  <div class="row ">
+                      <div class="col-xl-8 col-md-4 col-sm-4 col-12   my-auto mx-auto a"><h3 class=" mb-md-0 mb-5">Helping Hand UNC</h3></div>
+                      <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text "><b>Follow Us</b></h6><ul class="list-unstyled"><li><a href=https://heellife.unc.edu/organization/helpinghandproject>Heel Life</a></li><li><a href=https://www.instagram.com/hhp_unc/>Instagram</a></li><li><a href=https://www.facebook.com/hhp.unc.1>Facebook</a></li><li><a href=https://twitter.com/hand_unc>Twitter/X</a></li></ul></div>
+                      <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>Meetings</b></h6><p class="mb-1">Phillips Hall 19C</p><p>7-8 PM Every Wednesday</p> </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    </div>
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- /* Custom Stylesheet needs to come after bootstrap script */ -->
+    <link href="css/styles.css" rel="stylesheet">
   </body>
+</html>
