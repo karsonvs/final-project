@@ -107,6 +107,21 @@ h1{
     margin-bottom: 2%; 
 }
 
+#nav {
+    color: white;
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+}
 
 
+.m {
+    margin: 2%;
+    margin-bottom: 0;
+}
 
+.title {
+    font-weight: bold;
+}
